@@ -7,12 +7,12 @@ import axios from "axios"
 function App() {
   const [items, setItems] = useState([])
   const [active, setActive] = useState(1)
-  const [category, setCategory] = useState("general")
+  const [category, setCategory] = useState("top")
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=b95173f944324e94b9022e8d7ec646eb`)
+    fetch(`https://newsdata.io/api/1/news?apikey=pub_1305656f1432b5c72581bf4f1f44200bc1f32&&country=us&category=${category}`)
     .then(res => res.json())
-    .then(data => setItems(data.articles))
+    .then(data => setItems(data.results))
 }, [category])
   console.log(items)
 

@@ -2,13 +2,16 @@ import '../App.css'
 
 function Menu({active, setActive, setCategory}){
     const links = [
-        {id: 1, name: "General", value: "general"},
+        {id: 1, name: "Top", value: "top"},
         {id: 2, name: "Business", value: "business"},
         {id: 3, name: "Entertainment", value: "entertainment"},
         {id: 4, name: "Health", value: "health"},
         {id: 5, name: "Science", value: "science"},
         {id: 6, name: "Sports", value: "sports"},
-        {id: 7, name: "Technology", value: "technology"}
+        {id: 7, name: "Technology", value: "technology"},
+        {id: 8, name: "Politics", value: "politics"},
+        {id: 9, name: "Food", value: "food"},
+        {id: 10, name: "Environment", value: "environment"}
     ]
 
     function onClick(id, value) {
