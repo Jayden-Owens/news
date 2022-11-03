@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Menu from './components/Menu';
 import NewsGrid from './components/NewsGrid';
 import './App.css'
+import axios from "axios"
 
 function App() {
   const [items, setItems] = useState([])
